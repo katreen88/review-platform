@@ -1,0 +1,100 @@
+:root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+}
+
+body {
+    background: linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+    color: var(--text);
+}
+
+.hero-card,
+.auth-card,
+.website-card,
+.stats-box {
+    background: rgba(255,255,255,0.88);
+    border-radius: 1.25rem;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+    backdrop-filter: blur(6px);
+}
+
+.hero-card {
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.stats-box {
+    padding: 1rem 1.25rem;
+    min-height: 110px;
+    display: grid;
+    place-items: center;
+}
+
+.stats-box strong {
+    display: block;
+    font-size: 2rem;
+}
+
+.stats-box span {
+    color: var(--muted);
+}
+
+.auth-container {
+    max-width: 560px;
+}
+
+.website-card {
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.website-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 48px rgba(15, 23, 42, 0.12);
+}
+
+.rating-big {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.sticky-review-box {
+    position: sticky;
+    top: 1.5rem;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-review-box {
+        position: static;
+    }
+}
+
+
+.dashboard-card {
+    border-radius: 1.25rem;
+}
+
+.admin-table thead th {
+    background: #f8fafc;
+    font-size: 0.92rem;
+    white-space: nowrap;
+}
+
+.admin-table td,
+.admin-table th {
+    padding: 1rem;
+    vertical-align: middle;
+}
+
+.admin-comment-preview {
+    max-width: 320px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
